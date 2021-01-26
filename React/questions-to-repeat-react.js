@@ -1,4 +1,4 @@
-// ~ Junior questions
+// ~ Junior/junior+/premiddle questions
 
 // 1. What is React?
 // Answer: React - is a JavaScript library for creating resuing components and building user interfaces. This library was developed by Facebook.
@@ -16,7 +16,7 @@
 // Answer: The most expensive processes in JavaScript are the working with DOM elements. The Virtual DOM is a scaled-down copy of the DOM, which is JavaScript object. It is used for better performance in combination with the React engine. 
 
 // 6. What are the Props?
-// Answer: Props are properties that we use in components all the time. It's could be dynamic or static values. We can pass properties through a chain of components. Components in UI are static by default, but we can change them to dynamic with changing and using props. And we can controll this props by hooks and state managers.
+// Answer: Props are properties that we use in components all the time.  We can pass properties through a chain of components. Components in UI are static by default, but we can change them to dynamic with changing and using props. And we can controll this props by hooks and state managers.
 
 // 7. What is the stat? Where is it used?  
 // Answer: State is a global or isolated data store in React. It is and object with values.
@@ -59,4 +59,46 @@
 // Answer: Functional components are more productive. Now we can use only functional components with hooks, because today we don't need class components life cycles.
 
 // 11. What happens when you call setState?
-// 
+// Answer: setState we can call only in class components. When we call a setState, we create an object. After we change our state by comparison this object with state object and change it. The next step is changing Virtual DOM with new props.
+
+// 12. What is the difference between state and props?
+// Answer: State is an object with some values, attributes like a storage with data. Props are the properties, attributes wich we can pass to components.
+
+// 13. When to make asynchronous requests in React?
+// Answer: We have 2 types of components: classes and functions. Each type does this differently.
+
+// In classes: We need to do it in life cycle "componentDidMount"
+// An example:
+componentDidMount() {
+  someFetch()
+}
+
+// In functions: We need to do it in useEffect hook.
+// An example: 
+useEffect() {
+  someFetch()
+},[]
+
+// 14. What is the meaning of the special attribute key in React?
+// Answer: This attribute optimizes engine's rendering. In almost all cases. We need to add it.
+// Bad practise:
+array.map((x, index) => {
+  return <CustomComponent key={index} value={x.value}/>
+})
+// In this case we need to add some little lib with generating random keys
+
+// 15. Difference between Origian DOM and Virtual DOM
+// Answer:
+// 1) Real DOM updates too slow. Virtual DOM updates faster.
+// 2) DOM can directly update HTML. V-DOM can't.
+// 3) Creates a new DOM if element updates. Virtual DOM updates JSX if element updates.
+// 4) DOM manipulation is very expensive. With Virtual DOM it's more easy.
+// 5) Too much of memory wastage. No memory wastage.
+
+// 16. What are the features of React? 
+// Answer:
+// 1) Uses Virtual DOM instead of real DOM.
+// 2) Uses SSR.
+// 3) It follows uni-directional data flow (Flux) or data binding.
+
+// 17. 
