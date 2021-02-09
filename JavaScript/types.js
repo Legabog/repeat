@@ -1,5 +1,5 @@
 // JavaScript - dynamic program language
-// 
+
 // Primitive types in JavaScript(immutable types)
 
 console.log(typeof 1) // number
