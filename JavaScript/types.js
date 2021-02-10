@@ -23,7 +23,7 @@ console.log(typeof null) // Not null, it's object. Common mistake for compatibil
 
 console.log(typeof {}) // object
 console.log(typeof function(){}) // function
-console.log(typeof []) // object
+console.log(typeof []) // object 
 
 // Collections Map, WeakMap, Set, WeakSet
 
