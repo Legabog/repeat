@@ -159,7 +159,7 @@ console.log(selectionSort(array_7));
 //         5(1)  3(2)
 //          / \
 //       4(3) 1(4)
-
+// 
 const array_8 = [4, 10, 3, 5, 1];
 
 function binaryHeap(arr) {
