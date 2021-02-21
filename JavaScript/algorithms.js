@@ -75,6 +75,7 @@ const quickSort = (arr) => {
 
 // Merge sort
 // Estimation of algorithm complexity = O(nlogn)
+// 
 const array_6 = [1, 6, 20, 14, 5, 2, 7];
 const merging = (left, right) => {
   const resultArr = [];
