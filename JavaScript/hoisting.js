@@ -37,7 +37,7 @@ console.log(num) // 42
 
 function hoist() {
   a = 20; // Global variable a. We can refer to a outside of function.
-  var b = 100; // Function/Local variable a. Has local scope. Can use it only inside of function
+  var b = 100; // Function/Local variable b. Has local scope. Can use it only inside of function
 }
 
 hoist();
