@@ -67,3 +67,8 @@
 // Code - On - Demand
 
 // Idempotency
+
+// Protocols
+// RESTful
+// JSON:Api
+// GraphQL
