@@ -17,6 +17,7 @@
 */
 // 
 // 
+// 
 
 const defn = (functionName, args, body) => {
   if (functionName !== "" && typeof (functionName) === "string") { // проверяем имя функции (чтобы оно не было равна пустой строке) и тип (она должна быть строкой)
