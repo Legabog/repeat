@@ -1,5 +1,5 @@
 // Event loop 
-
+// Microtasks > Macrotasks
 // example 1
 
 function main() {

@@ -56,6 +56,7 @@ const print = new NewsPrinter(
 );
 
 // O - Open Close Principle
+// Classes, objects must be opened for extention and closed for changes
 
 class Shape {
   area() {
@@ -113,6 +114,7 @@ class AreaCalculator {
 const calc = new AreaCalculator([new Square(10), new Circle(1), new Circle(5)]);
 
 // L - Liskov Substitution Principle
+// An inherited class should complement, not replace, the behavior of a base class
 
 class Person {}
 
@@ -186,6 +188,7 @@ renderComponent(new FooterComponent());
 // renderComponent(new HOC())
 
 // I - Interface Segregation Principle
+// The principle of interface separation says that interfaces that are too "thick" should be separated into smaller and more specific interfaces, so that the software entities of the smaller interfaces only know about the methods they need to use. As a result, changing an interface method should not change program entities that do not use that method.
 
 // class Animal {
 //   constructor(name) {
@@ -260,6 +263,8 @@ Object.assign(Eagle.prototype, swimmer, walker, flier)
 Object.assign(Whale.prototype, swimmer)
 
 // D - Dependecy Inversion Principle
+// A. Модули верхних уровней не должны зависеть от модулей нижних уровней. Оба типа модулей должны зависеть от абстракций.
+// B. Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
 
 class Fetch {
   request(url) {

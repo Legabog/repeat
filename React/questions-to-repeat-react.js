@@ -18,7 +18,7 @@
 // 6. What are the Props?
 // Answer: Props are properties that we use in components all the time.  We can pass properties through a chain of components. Components in UI are static by default, but we can change them to dynamic with changing and using props. And we can controll this props by hooks and state managers.
 
-// 7. What is the stat? Where is it used?  
+// 7. What is the state? Where is it used?  
 // Answer: State is a global or isolated data store in React. It is and object with values.
 
 // Class with state:

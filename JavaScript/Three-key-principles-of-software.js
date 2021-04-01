@@ -1,6 +1,8 @@
 // Three key principles of software
+
 // DRY Dont Repeat Yourself
-// Duplicate of programm module or component is a very bad idea
+// Singe source of truth
+// Duplicates of programm modules or components is a very bad idea
 
 // React
 // We need to create custom component. For removing dublicates of code.
@@ -25,6 +27,16 @@
 {/* <CustomComponent Title="Some_Title" Text="Some_Text" clickHandler={clickFunc}/> */}
 
 // The same idea in DataBases, Structures of code.
+//-----
 
+// KISS Keep It Simple Stupid(Keep It Short and Simple)
 
+// Don't add useless methods, ui features
+// Create it with max simple way
+// Don't use library if you can do something yourself
+//-----
 
+// YAGNI You Are Not Gonna Need It
+// 
+
+//-----
