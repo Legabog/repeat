@@ -35,7 +35,7 @@ const insertionSort = (arr) => {
     arr[j] = current;
   }
 
-  return sortedArray;
+  return arr;
 };
 console.log(insertionSort(array_2));
 

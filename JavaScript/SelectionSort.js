@@ -1,5 +1,4 @@
 // Selection Sort
-// 
 
 function SelectionSort(array) {
   for (let i = 0; i < array.length; i++) {
