@@ -17,9 +17,8 @@ rl.on("line", (number) => {
 })
 
 rl.on("close", () => {
-  for (let i = 0; i <= Number(input.join("")); i++) {
+  for (let i = 1; i <= Number(input.join("")); i++) {
     if (Number(i.toString().split("").reverse().join("")) === i) {
-      console.log(Number(i.toString().split("").reverse().join("")))
       result++
     }
   }
