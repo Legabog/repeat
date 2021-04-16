@@ -1,4 +1,4 @@
-// Bubble Sort such a simple algorithm of sorting 
+// Bubble Sort such a simple algorithm of sorting
 // In my example i'm using combination of ternary operator and destructuring assignment
 // In this way I don't need to create temp variable
 
@@ -11,7 +11,6 @@ function BubbleSort(array) {
     }
   }
 
-  return array
+  return array;
 }
 
-console.log(BubbleSort([7, 6, 4, 2, 10, 5]))
