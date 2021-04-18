@@ -1,6 +1,9 @@
 // SOLID principles
 
 // S - Single Responsibility Principle
+// Every class must meet to one aspect(solve one problem)
+
+// Каждый класс должен отвечать одному аспекту(решать одну поставленную задачу)
 
 class News {
   constructor(title, text) {
@@ -57,6 +60,8 @@ const print = new NewsPrinter(
 
 // O - Open Close Principle
 // Classes, objects must be opened for extention and closed for changes
+
+// Классы, объекты должны быть открыты для расширения и закрыты для изменений
 
 class Shape {
   area() {
@@ -115,6 +120,8 @@ const calc = new AreaCalculator([new Square(10), new Circle(1), new Circle(5)]);
 
 // L - Liskov Substitution Principle
 // An inherited class should complement, not replace, the behavior of a base class
+
+// Наследуемый класс должен дополнять, а не заменять поведение базового класса
 
 class Person {}
 
@@ -190,6 +197,8 @@ renderComponent(new FooterComponent());
 // I - Interface Segregation Principle
 // The principle of interface separation says that interfaces that are too "thick" should be separated into smaller and more specific interfaces, so that the software entities of the smaller interfaces only know about the methods they need to use. As a result, changing an interface method should not change program entities that do not use that method.
 
+// Принцип разделения интерфейсов гласит, что слишком "толстые" интерфейсы должны быть разделены на более мелкие и специфические интерфейсы, так что программные сущности более мелких интерфейсов знают только о методах, которые им нужны. В результате, изменение метода интерфейса не должно изменять программные сущности, которые не используют этот метод.
+
 // class Animal {
 //   constructor(name) {
 //     this.name = name;
@@ -263,6 +272,9 @@ Object.assign(Eagle.prototype, swimmer, walker, flier)
 Object.assign(Whale.prototype, swimmer)
 
 // D - Dependecy Inversion Principle
+// A. Top-level modules should not depend on lower-level modules. Both types of modules should depend on abstractions.
+// B. Abstractions should not depend on parts. Parts should depend on abstractions.
+
 // A. Модули верхних уровней не должны зависеть от модулей нижних уровней. Оба типа модулей должны зависеть от абстракций.
 // B. Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
 
