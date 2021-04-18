@@ -1,4 +1,4 @@
-// Count Sort
+// Counting Sort
 
 const countingSort = (array, max) => {
   const counts = new Array(max + 1);
