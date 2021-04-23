@@ -3,7 +3,7 @@
 // S - Single Responsibility Principle
 // Every class must meet to one aspect(solve one problem)
 
-// Каждый класс должен отвечать одному аспекту(решать одну поставленную задачу)
+// Каждый класс должен отвечать за один аспект(решать одну поставленную задачу)
 
 class News {
   constructor(title, text) {
@@ -271,7 +271,7 @@ Object.assign(Dog.prototype, swimmer, walker)
 Object.assign(Eagle.prototype, swimmer, walker, flier)
 Object.assign(Whale.prototype, swimmer)
 
-// D - Dependecy Inversion Principle
+// D - Dependency Inversion Principle
 // A. Top-level modules should not depend on lower-level modules. Both types of modules should depend on abstractions.
 // B. Abstractions should not depend on parts. Parts should depend on abstractions.
 

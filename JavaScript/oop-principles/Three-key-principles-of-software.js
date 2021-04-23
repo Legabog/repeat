@@ -37,6 +37,5 @@
 //-----
 
 // YAGNI You Are Not Gonna Need It
-// 
 
 //-----

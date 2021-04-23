@@ -1,11 +1,13 @@
 // Quick sort
 // Estimation of algorithm complexity = O(nlogn)
-const array_5 = [4, 3, 7, 5, 9, 15];
+const array_5 = [4, 4, 3, 7, 5, 9, 15];
 const quickSort = (arr) => {
-  const mid = Math.floor(arr.length / 2);
-
-  const left = arr.filter((e) => e < arr[mid]);
-  const right = arr.filter((e) => e > arr[mid]);
-
-  return [...quickSort(left), arr[mid], ...quickSort(right)];
+  if (arr.length < 2) {
+    return arr
+  }
+  const pivot = arr[Math.floor(Math.random() * arr.length)];
+  const less = arr.filter((value) => value < pivot);
+  const greater = arr.filter((value) => value > pivot);
+  const equal = arr.filter((value) => value === pivot)
+  return [...quickSort(less), ...equal, ...quickSort(greater)];
 };

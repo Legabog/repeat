@@ -5,35 +5,43 @@
    Stablitiy       : Stable
    Is-In-Place     : In-Place	
    When to use     : 1. If array is of small size 
-		                 2. If array is of large size but nearly sorted
+		               2. If array is of large size but nearly sorted
    Remark          : Easiest to implement	
-
 **********************************************************************************************
-2. Cocktail Shaker Sort:
+2. Cocktail, Shaker Sort (Modification of Bubble Sort):
    Time Complexity : Best => O(n) , Worst & Average => O(n*n)
    Space Complexity: O(1) 
    Stablitiy       : Stable
    Is-In-Place     : In-Place	
-   When to use     : 1. If array is of small size 
-		               2. If array is of large size but nearly sorted
-   Remark          : Variation of Bubble sort
-
+   Remark          : Modification of Bubble sort
 **********************************************************************************************
-3. Selection Sort:
+3. Odd-Even Sort (Modification of Bubble Sort):
+   Time Complexity : Best => O(n) , Worst & Average => O(n*n)
+   Space Complexity: O(1) 
+   Stablitiy       : Stable
+   Is-In-Place     : In-Place	
+   Remark          : Modification of Bubble sort
+**********************************************************************************************
+4. Comb Sort (Modification of Bubble Sort):
+   Time Complexity : Best => O(n) , Worst & Average => O(n*n)
+   Space Complexity: O(1) 
+   Stablitiy       : Stable
+   Is-In-Place     : In-Place	
+   Remark          : Variation of Bubble sort
+**********************************************************************************************
+5. Selection Sort:
    Time Complexity : Best & Worst & Average => O(n*n)
    Space Complexity: O(1) 
    Stablitiy       : Not-Stable
    Is-In-Place     : In-Place
    When to use     : 1. If array is of small size
-		                 2. To minimise the number of swaps
+		               2. To minimise the number of swaps
    Remarks         : Bubble sort has more number of swaps as compare to selection
 		             Sort but bubble sort has better best time complexity.
 		             It can also be implemented as stabaly.
 		             Selection sort makes O(n) swaps which is minimum among all sorting algorithms mentioned above.	
-
-
 **********************************************************************************************
-4. Insertion Sort:
+6. Insertion Sort:
    Time Complexity : Best => O(n) , Worst & Average => O(n*n)
    Space Complexity: O(1) 
    Stablitiy       : Stable
@@ -43,10 +51,8 @@
 		             than a threshold and for small size it is better than merge
 		             and quick sort becasue of low constant values and non
  		             recusive in nature.
-		
-
 **********************************************************************************************
-5. Heap Sort:
+7. Heap Sort:
    Time Complexity : Best & Worst & Average => O(nLog(n))
    Space Complexity: O(1) 
    Stablitiy       : Not-Stable
@@ -56,17 +62,14 @@
    Remark          : It always guaranteed to be O(nLog(n)) with constant space 
                      which solves the problem of overflow of address space of a 
                      process which may occur in merge and quick sort(recursive stack).
-
 **********************************************************************************************
-6. Counting Sort:
+8. Counting Sort:
    Time Complexity : Best & Worst & Average => O(n+k)
    Space Complexity: O(n+k) 
    Stablitiy       : Not-Stable
    Is-In-Place     : In-Place
-
-
 **********************************************************************************************
-7. Merge Sort:
+9. Merge Sort:
    Time Complexity : Best & Worst & Average => O(nLog(n))
    Space Complexity: O(n) 
    Stablitiy       : Stable 
@@ -75,9 +78,8 @@
    When to use     : 1.When we don't have random access(linked list)
                       [R.A like as we have in array]
                      2.When array is not to large.
-
 **********************************************************************************************
-8. Quick Sort:
+10. Quick Sort:
    Time Complexity : Best => O(nLog(n)) , Worst => O(n*n) 
    Space Complexity: O(n) 
    Stablitiy       : Not-Stable 
