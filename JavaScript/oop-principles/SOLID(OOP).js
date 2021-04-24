@@ -122,7 +122,7 @@ const calc = new AreaCalculator([new Square(10), new Circle(1), new Circle(5)]);
 // An inherited class should complement, not replace, the behavior of a base class
 
 // Наследуемый класс должен дополнять, а не заменять поведение базового класса
-
+// 
 class Person {}
 
 class Member extends Person {
