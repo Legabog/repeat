@@ -10,6 +10,7 @@ function sayHello(name) {
 }
 
 sayHello("Oleg")
+// 
 
 // example 2
 

@@ -12,21 +12,18 @@
    Time Complexity : Best => O(n) , Worst & Average => O(n*n)
    Space Complexity: O(1) 
    Stablitiy       : Stable
-   Is-In-Place     : In-Place	
    Remark          : Modification of Bubble sort
 **********************************************************************************************
 3. Odd-Even Sort (Modification of Bubble Sort):
-   Time Complexity : Best => O(n) , Worst & Average => O(n*n)
+   Time Complexity : Best => O(n) , Worst => O(n*n)
    Space Complexity: O(1) 
    Stablitiy       : Stable
-   Is-In-Place     : In-Place	
    Remark          : Modification of Bubble sort
 **********************************************************************************************
 4. Comb Sort (Modification of Bubble Sort):
-   Time Complexity : Best => O(n) , Worst & Average => O(n*n)
+   Time Complexity : Best => O(n*logn) , Worst => O(n*n)
    Space Complexity: O(1) 
    Stablitiy       : Stable
-   Is-In-Place     : In-Place	
    Remark          : Variation of Bubble sort
 **********************************************************************************************
 5. Selection Sort:

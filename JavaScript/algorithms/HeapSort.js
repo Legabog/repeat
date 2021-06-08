@@ -28,57 +28,52 @@
 //         5(1)  3(2)
 //          / \
 //       4(3) 1(4)
-// 
-// 
-// 
+//
+//
+//
+
 const array_8 = [4, 10, 3, 5, 1];
 
-function binaryHeap(arr) {
-  let heaplist = [...arr];
-  let heapsize = arr.length;
+const buildHeap = (arr) => {
+  let i = Math.floor(arr.length / 2 - 1);
+  while (i >= 0) {
+    heapify(arr, i, arr.length);
+    i--;
+  }
+};
 
-  function heapify(root_index) {
-    const largest = root_index;
-    const left_child_root = 2 * root_index + 1;
-    const right_child_root = 2 * root_index + 2;
+const heapify = (heap, i, max) => {
+  let index;
+  let leftChild;
+  let rightChild;
 
-    if (
-      left_child_root < heapsize &&
-      heaplist[left_child_root] > heaplist[largest]
-    ) {
-      [heaplist[largest], heaplist[left_child_root]] = [
-        heaplist[left_child_root],
-        heaplist[largest],
-      ];
+  while (i < max) {
+    index = i;
+    leftChild = 2 * i + 1;
+    rightChild = leftChild + 1;
+    d;
 
-      return heapify(left_child_root);
-    }
+    if (leftChild < max && heap[leftChild] > heap[index]) index = leftChild;
 
-    if (
-      right_child_root < heapsize &&
-      heaplist[right_child_root] > heaplist[largest]
-    ) {
-      [heaplist[largest], heaplist[right_child_root]] = [
-        heaplist[right_child_root],
-        heaplist[largest],
-      ];
+    if (rightChild < max && heap[rightChild] > heap[index]) index = rightChild;
 
-      return heapify(right_child_root);
-    }
+    if (index === i) return;
+
+    [heap[i], heap[index]] = [heap[index], heap[i]];
+
+    i = index;
+  }
+};
+
+const heapSort = (arr) => {
+  buildHeap(arr);
+
+  let lastIndex = arr.length - 1;
+  while (lastIndex > 0) {
+    [arr[0], arr[lastIndex]] = [arr[lastIndex], arr[0]];
+    heapify(arr, 0, lastIndex);
+    lastIndex--;
   }
 
-  function buildHeap() {
-    for (let i = heapsize / 2; i <= 0; i--) {
-      heapify(i);
-    }
-
-    return heaplist;
-  }
-
-  return {buildHeap};
-}
-
-const result = binaryHeap(array_8);
-const {heapbuilder} = result();
-
-console.log(heapbuilder());
+  return arr;
+};
