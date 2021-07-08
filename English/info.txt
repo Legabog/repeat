@@ -1,0 +1,14 @@
+*** Information about me ***
+
+Hello, my name is Oleg, surname is Dosov. I'm a frontend developer from Saint-Petersburg. I'm 24 years old. I was born in Russia. My hometown is Orel. It's not far away from Moscow, about 400 kilometers away. 
+
+First time I wrote code in nine grade. I made the first program, which outputs one custom string. At that momonet I felt like a hacker. My parents bought me a computer, when I was 6 or 7 years old. I was excited. And I didnt understand what to do with it. First time I watched some popular cartoons, like Shrek. But sometimes it was too boring for me. The next passion was devil's program "Paint". I waste a lot of time in it. Finally the most interesting for me was first computer games.
+
+After school I passed all my exams and got into the university in my hometown, Orel. That was strange/odd part of my life. I was disappointed at development a bit. In my opinion, university's program of studying was legacy and boring. I almost didnt study. There are only fun and chill in my mind. 
+
+After I graduated from the university, I tryed to choose the next path of my life. I made a decision, that I will try to enter in Saint-Petersburg's university, that names "ITMO University". I wanted to step up in my life, because at that point I can describe myself as weak developer. Inforamtion from bachelor's degree was useless for me. 
+
+I started to study JavaScript ecosystem and frontend technologies abaout 2 and a half years ago. Over the course of two years I took a lot of courses. There are a lot of free courses on Youtube, Coursera and Udemy platform. The main purpose is to learn more about React and JavaScript ecosystems. I feel lucky to do what I do. 
+
+Actually I always try to improve my skills. I suppose it is the most important for me as developer. Nowdays world of techologies changes every day, no no every minute. Even now. It is changing.
+

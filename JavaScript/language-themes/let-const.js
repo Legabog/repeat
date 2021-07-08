@@ -1,4 +1,4 @@
-  
+
 // Let
 let a = 'Variable a'
 let b = 'Variable b'

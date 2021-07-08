@@ -1,9 +1,35 @@
 // Closure in JavaScript
+// It's Javascript mechanism. 
+// Combination of function and lexical enviroment.
+
+// The lexical enviroment = parent scope.
+// Parent scope could be a global scope or function
+
+// Parent scope = global scope
+
+let a = 10;
+
+function closure_1(b) {
+  return a + b
+}
+
+// Parent scope = other function
+
+function closure_2() {
+  let a = 10
+
+  function innerFunc() {
+    return a + b
+  }
+
+  return innerFunc
+}
+
 
 // example 1
 function sayHello(name) {
   const message = `Hello, ${name}`
-
+  
   return (function() {
     console.log(message) // this function has access to variable message from upper scope
   })()

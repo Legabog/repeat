@@ -1,5 +1,19 @@
 // JavaScript - dynamic program language
 
+// * Primitive types:
+// - Number
+// - String
+// - Boolean
+// - BigInt
+// - Symbol
+// - undefined
+// - null, but instance of null is object
+
+// * Object types: 
+// - Object
+// - Arrays inherited from the object
+// - Function inherited from the object, but the type is defined as "function" for convenience
+
 // Primitive types in JavaScript(immutable types)
 
 console.log(typeof 1) // number

@@ -90,7 +90,7 @@ const fixedTest_1 = () => {
 // Second way - with using IIFE
 const fixedTest_2 = () => {
   for (var i = 0; i < 3; i++) {
-    (() => console.log(i))();
+    ((index) => setTimeout(() => console.log(index), 0))(i);
   }
 };
 
