@@ -1,18 +1,28 @@
-// JavaScript - dynamic program language
+// ** Types in JavaScript **
 
-// * Primitive types:
-// - Number
-// - String
-// - Boolean
-// - BigInt
-// - Symbol
-// - undefined
-// - null, but instance of null is object
+// * All types:
+// - 1) Number -> primitive type
+// - 2) String -> primitive type
+// - 3) Boolean -> primite type
+// - 4) Object -> object type
+// - 5) BigInt -> primitive type 
+// - 6) Symbol -> primitive type
+// - 7) undefined -> primitive type
+// - 8) null -> primitive type, but typeof null === "object", and old bug of JavaScript
 
-// * Object types: 
-// - Object
+// * All typeof types:
+// - 1) "number"
+// - 2) "string"
+// - 3) "boolean"
+// - 4) "undefined"
+// - 5) "object"
+// - 6) "function"
+// - 7) "symbol"
+// - 8) "bigint"
+
 // - Arrays inherited from the object
 // - Function inherited from the object, but the type is defined as "function" for convenience
+// - An Object is the hieghest level of JavaScript's hierarchy. Above only null. 
 
 // Primitive types in JavaScript(immutable types)
 

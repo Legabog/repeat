@@ -1,5 +1,10 @@
-// Scopes
-// We have global and local scope (global scope and function scope)
+// ** Scopes in JavaScript **
+// There are global, local, functional, nested in JavaScript.
+
+// * Global
+let a = "global"
+// * Local
+
 
 // example 1
 // nested functional scope
