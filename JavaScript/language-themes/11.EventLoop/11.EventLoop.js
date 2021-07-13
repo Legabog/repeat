@@ -1,7 +1,15 @@
-// Event loop 
-// Microtasks > Macrotasks
-// example 1
+// ** Event loop in JavaScript **
 
+// Event loop is an engine of assynchronous in JavaScript
+// There are memory heap, call stack, webApi and call queue in event loop's structure
+
+// * Task's priorities:
+// Sync Task
+// !In Node, "Nanotask" it's not called "nanotask", but it has more priority than Microtask. process.nextTick
+// Microtask, like Promises
+// Macrotasks, like setTimeout
+
+// An example
 function main() {
   console.log("A")
 
@@ -20,8 +28,7 @@ main() // Console: A, C, B
 // 4) After the last expression of the main function, the main element is removed from the call stack, leaving it empty. The call stack must be empty in order for the browser to place a message queue item in it. For this reason, even if setTimeout specifies a timeout of 0 seconds, exec() is not executed until all elements in the call stack are finished.
 // 5) Now exec() is placed on the call stack and executed. The letter B is printed to the console. This is it - the JavaScript event loop (EventLoop).
 
-// example 2 
-
+// Other example:
 function main() {
   console.log('A')
   setTimeout(function exec() {
