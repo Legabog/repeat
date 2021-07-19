@@ -2,7 +2,6 @@
 
 // Context connects with object
 // Keyword "this" connects with object, which function belongs
-// "this" is just a mark to some object, function 
 // Main problem with context is missing of context 
 // Call, bind, apply, new are the types of binding context in JavaScript
 

@@ -123,7 +123,7 @@ if (true) {
 }
 console.log(count); // 0 (not ReferenceError)
 
-// Functional/local/block/modal scope define a scope with const, let and var
+// Functional/local/block scope define a scope with const, let and var
 function run() {
   // "run" function scope
   var message = "Run, Forrest, Run!";

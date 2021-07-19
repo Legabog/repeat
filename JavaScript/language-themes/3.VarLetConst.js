@@ -15,7 +15,7 @@ console.log(global_2) // isn't defined, global_2 is limited by function scope, w
 
 // * Let
 // It's ES6 way if variable's declaration
-// When we declare variable with "let", it has modal/functional scope
+// When we declare variable with "let", it has block/functional scope
 // An example:
 let a = "Variable a";
 let b = "Variable b";
@@ -35,7 +35,7 @@ changeMe += 100 // no error
 
 // * Const
 // It's ES6 way if variable's declaration
-// When we declare variable with "const", it has modal/functional scope
+// When we declare variable with "const", it has block/functional scope
 // An example:
 const PORT = 8080;
 PORT = 10000; // an error

@@ -20,7 +20,7 @@
 // async | No order of execution.            | Doesn't matter. Can dowload and execute 
 //       | First downloaded script, starts   | before page loading. It happens, when
 //       | first.                            | scripts are so little and document is big.
-// defe  | Has the order of execution. The   | Executes after document downloaded and 
+// defer | Has the order of execution. The   | Executes after document downloaded and 
 //       | order is how is it situated in the| processed, before DOMContentLoaded.
 //       | document.                         |
 
