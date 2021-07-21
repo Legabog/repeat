@@ -1,0 +1,41 @@
+                                      Your Name
+                                      Your Address
+                  Your full address   Your City, State, Zip
+                                      Code
+                                      Your Phone Number
+
+                              Date    November  3
+
+Name
+Title
+Organization  <--- The name and adress of the person to whom you are writing
+Address
+City, State, Zip Code
+
+* Dear Mr./Ms. Last Name:   <--- Greeting. Use the title and name of the person to
+                                       whom you are writing     
+
+* Re: Some header     <--- Reference. The heading of your letter. It tells the reader 
+                      what the letter is about.
+
+* I'm writing to complain about... <--- Opening paragraph. Explain why you are writing
+                                     the letter. Be clear and to the point.
+
+* Some main info... <--- Main paragraph. Explain what has happened in more detail.
+                         Do not write one large paragraph. Use Connective or write a
+                         paragraph for each point. Support opinions with facts. 
+                         Use "Firstly", "First of all", "Secondly", "Finally" for flexible structure.
+
+* Conclusion. Repeat the main point and explain what response or outcome you want. In conclusion.
+
+* Your sincerely/faithfully. Best regrats. <--- Close. Use "Your sincerely" if you know the name of the
+                              person to whom you are writing. If not, use "Your faithfully".
+
+
+* Your signature and name.
+
+
+
+
+
+                                    

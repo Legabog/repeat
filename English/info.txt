@@ -4,22 +4,22 @@
 My name is Oleg, surname is Dosov. I'm developer from Saint-Petersburg. My occupation is frontend development. I'm 24 years old. I was born in Russia. My hometown is Orel. It's not far away from Moscow, about 400 kilometers away. 
 
 *** First try in programming ***
-My first line of code was written by me in ninth grade. I have done the first program, which outputed one custom string. At that moment I felt like a hacker. My parents bought me a computer, when I was 6 or 7 years old. I was excited. And I didnt understand what to do with it. First time I watched some popular cartoons, like Shrek. But sometimes it was too boring for me. The next passion was devil's program "Paint". I wasted a lot of time in it. Finally the most interesting for me was computer games.
+My first line of code was written by me in ninth grade. I have made the first program, which outputed one custom string. At that moment I felt like a hacker. My parents bought me a computer, when I was 6 or 7 years old. I was excited. And I didn't understand what to do with it. First time I watched some popular cartoons, like Shrek. But sometimes it was such a boring for me. The next passion was devil's program "Paint". I wasted a lot of time in it. Finally the most interesting for me was computer games.
 
 *** After school ***
-After school I passed all my exams and got into the university in my hometown, Orel. That was strange/odd part of my life. I was disappointed at development a bit. In my opinion, university's program of studying was legacy and boring. I almost didnt study. There were only fun and chill in my mind. 
+After school I passed my finally exams and entered the university in my hometown, Orel. That was strange/odd part of my life. I was disappointed at development a bit. In my opinion, university's program of studying was legacy and boring. I almost didn't study. There were only fun and chill in my mind. 
 
 *** After university ***
 After I was graduated from the university, I tryed to choose the next path of my life. I have made a decision, that I will try to enter in Saint-Petersburg's university, which names "ITMO University". I wanted to step up in my life, because at that point I can describe myself as a weak developer. Inforamtion from bachelor's degree was useless for me. 
 
 *** Frontend start ***
-I started studying JavaScript ecosystem and frontend technologies about 2 and a half years ago. Over the course of two years I took a lot of courses, read a lot of books and learned a lot of technologies from frontend stack. The most usefull books for me are series of books "I don't know JavaScript" and Uncle Bob's book, calls "Clean code". This books changed and fliped my mind. Nowdays we have a lot of free courses on Youtube, Coursera and Udemy platform. The main purpose of this sources is teaching more about Programming, React and JavaScript ecosystems.
+I have been studying JavaScript ecosystem and frontend technologies for about 2 and a half years. Over the course of two years I have taken a lot of courses, have read a lot of books and have learned a lot of technologies from frontend stack. The most significantly books for me are series of books "You don't know JavaScript" and Uncle Bob's book, calls "Clean code". This books changed and fliped my mind. Nowdays we have a lot of free courses on Youtube, Coursera and Udemy platform. The main purpose of this sources for me is teaching more about Programming, React and JavaScript ecosystems.
 
 *** Why Frontend? ***
-Today we have frontend and backend, two sides of developing. In frontend you can combine business logic and visualization part of program. I guess it is more interestion for me to have some result, which I could see and interact with it.
+Today we have frontend and backend, two sides of developing. In frontend you can combine business logic and visualization part of program. I suppose it is more interesting for me to have some visual result, which I can see and interact with.
 
 *** About projects ***
-I have done a lot of pet projects. The most greatfull is social network, which contains a lot of modules. For example music player or network's profile editor. At the beginning this project was like a sandbox for me. I have tried a lot of new technologies. But now this project is like a real production project. I'm constantly refactoring this social network.    
+I have made a lot of pet projects. The most greatfull and significantly is a social network, which contains a lot of modules. For example music player or network's profile editor. At the beginning this project was like a sandbox for me. I have tried a lot of new technologies. But now this project is like a real production project. I'm constantly refactoring this social network.    
 
 *** Improvement of skills ***
 Actually I always try to improve my skills. I suppose it is the most important for me as developer. Nowdays world of techologies changes every day, every minute. Even now. It is changing. Every programmer could improve yourself. 
