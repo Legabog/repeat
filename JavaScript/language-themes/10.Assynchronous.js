@@ -40,6 +40,11 @@ function fn() {
   setTimeout(() => console.log("Hi"), 5000);
 }
 // * Promises
+// promises have 3 states:
+// 1. pedning - start state of promise, not resolved and not rejected
+// 2. fulfilled - success finished operation
+// 3. rejected - fail finished operation
+
 // An example:
 const fnPromises = () =>
   new Promise((resolve, reject) => resolve("I was resolved"));
@@ -62,4 +67,5 @@ function* numberGemerator(n = 10) {
   for(let i = 0; i < n; i++){
     yield i
   }
+  yield n
 }

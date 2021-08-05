@@ -1,7 +1,7 @@
 // ** Types of functions **
 
 // Function's types: functions and arrow functions
-// Arrow function doesn't have own context "this", it refers to outer scope
+// Arrow function doesn't have own context "this" and "arguments", it refers to outer scope
 
 // * Function declaration
 // An example:

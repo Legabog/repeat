@@ -25,7 +25,7 @@
 //       | document.                         |
 
 // 7. Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
-// answer: Because it is the best place for them. In this case at the begining you will initicate css style, after browser will render html with styles. With fast internet connection it is not matter, but with slow speed it is(at the begining you will see elements without css).
+// answer: Because it is the best place for them. In this case at the begining you will initicate css style, after browser will render html with styles. With fast internet connection it doesn't not matter, but with slow speed it does(at the begining you will see elements without css).
 
 // 8. Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
 // answer: Srcset is a attribute for adaptive images.

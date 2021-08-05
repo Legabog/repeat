@@ -8,7 +8,7 @@
 // - 5) BigInt -> primitive type 
 // - 6) Symbol -> primitive type
 // - 7) undefined -> primitive type
-// - 8) null -> primitive type, but typeof null === "object", and old bug of JavaScript
+// - 8) null -> primitive type, but typeof null === "object", an old bug of JavaScript
 
 // * All typeof types:
 // - 1) "number"
@@ -25,6 +25,11 @@
 // - An Object is the hieghest level of JavaScript's hierarchy. Above only null. 
 
 // Primitive types in JavaScript(immutable types)
+// * All primitive types have a wrapper(this is a object with methods), exept null, undefined: Number(), String(), Boolean(), BigInt(), Symbol()
+// Thats why we can call some methods in this example.
+// An example:
+// let a = 10
+// a.isNaN() === Number(10).isNaN(), here we called method of Number() isNaN. We can do it, because a was wrapped by wrapper Number() at the moment of calling method isNaN. Variable a doesn't have any methods it is just a simple variable. 
 
 console.log(typeof 1) // number
 console.log(typeof NaN) // number
@@ -86,3 +91,28 @@ console.log(0 == []) // true
 console.log(0 == null) // false
 console.log(0 == {}) // false
 
+// {} + [] and [] + {}
+// - in the first case {} + [], 
+// {} is an empty block of code, cause of that we have +[]
+// +[] is a number type conversion, +[] === 0
+// - first result {} + [] === 0
+// - in the second case [] + {}
+// array [] is converting to String, [].toString() === ""
+// "" + {} === "[objectObject]"
+// - second result is "[objectObject]"
+
+// Some interesting examples
+// array
+// [].toString() === ""
+// [1,2].toString() === "1,2"
+// [1, "abc"].toString() === "1, abc"
+// +[] === 0
+// +[1] === 1
+// +[1, 2] === NaN
+// !![] === true
+
+// object
+// let obj = {}
+// obj.toString() === "[objectObject]"
+// +obj === NaN
+// !!obj === true 

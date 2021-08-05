@@ -1,4 +1,4 @@
-// Arrow vs classic methodds
+// Arrow vs classic methods
 class Test {
   methodFunction() {
     return this;
