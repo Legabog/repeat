@@ -45,7 +45,7 @@ const Main = (props) => {
 // Create it with max simple way.
 // Don't use library if you can do something yourself.
 // ---
-// SOLID
+// * SOLID
 // S - Single Responsibility Principle.
 // Every class must meet to one aspect(solve one problem).
 // Каждый класс должен отвечать за один аспект(решать одну поставленную задачу).
@@ -64,7 +64,7 @@ const Main = (props) => {
 // A. Модули верхних уровней не должны зависеть от модулей нижних уровней. Оба типа модулей должны зависеть от абстракций.
 // B. Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
 // --- 
-// YAGNI
+// * YAGNI
 // YAGNI - You are not gonna need it.
 // The main purpose of this principle is "Avoiding redundant application's functionality."
 // ---
