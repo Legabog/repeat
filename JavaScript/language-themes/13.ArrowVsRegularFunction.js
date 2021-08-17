@@ -32,7 +32,6 @@ let person = {
 // We can't use arrow functions as constructors(with keyword "new").
 
 // 5. Duplicates of arguments
-
 // Regular Functions
 // no use strict
 // An example:

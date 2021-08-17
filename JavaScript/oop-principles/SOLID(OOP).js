@@ -2,7 +2,6 @@
 
 // S - Single Responsibility Principle
 // Every class must meet to one aspect(solve one problem)
-
 // Каждый класс должен отвечать за один аспект(решать одну поставленную задачу)
 
 class News {
