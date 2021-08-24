@@ -57,7 +57,7 @@ const print = new NewsPrinter(
   new News("Новость № 1.", "Сегодня очень пасмурно.")
 );
 
-// O - Open Close Principle
+// O - Open Closed Principle
 // Classes, objects must be opened for extention and closed for changes
 
 // Классы, объекты должны быть открыты для расширения и закрыты для изменений

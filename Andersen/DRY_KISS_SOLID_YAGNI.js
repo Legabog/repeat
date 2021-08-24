@@ -43,7 +43,6 @@ const Main = (props) => {
 // KISS - Keep it short and simple.
 // Don't add useless methods, ui features.
 // Create it with max simple way.
-// Don't use library if you can do something yourself.
 // ---
 // * SOLID
 // S - Single Responsibility Principle.

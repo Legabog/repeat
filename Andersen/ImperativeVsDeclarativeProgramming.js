@@ -14,3 +14,4 @@
 // In declarative programming:
 // - I want fry meet with vegetables on dinner.
 // ---
+// There are OOP and FP.

@@ -3,3 +3,5 @@
 // Libraries in JavaScript, which help us to test: Jest, Enzyme, RTL(React Testing Library). 
 // With tests we try to check some specific cases of programm behaviour.
 // ---
+
+// There test's pyramid. TDD and BDD.

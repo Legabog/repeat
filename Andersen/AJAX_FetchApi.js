@@ -6,8 +6,4 @@
 // * Fetch Api
 // FetchApi - interface for getting some sources, like XMLHttpRequest. Fetch Api is more flexible and powerfull.
 // First fetch's argument is url, second is options.
-// Method fetch() has 3 states:
-// - Resolved
-// - Reject
-// - Fullfilled
-// ---
+// fetch() returns promise
