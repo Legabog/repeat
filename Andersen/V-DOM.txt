@@ -1,0 +1,13 @@
+Virtual DOM - концепция представления пользовательского интерфейса, с которой можно взаимодей-
+ствовать с DOM без таких сильных затрат.
+
+Current tree - это наше актуальное дерево компонентов.
+
+Current tree -> Rendering Environment
+
+Для отрисовки текущих изменений отвечает Rendering Environment.
+
+Наше дерево Current tree попадает в Rendering Environment. После этого происходят изменения в 
+Work in current tree. Допустим пользователь удалил или добавил что-то с помощью такого механизма,
+как Reconciliation мы сравниваем Current tree и Work in progress tree ищем различия и отрисовы-
+ваем Work in progress tree.

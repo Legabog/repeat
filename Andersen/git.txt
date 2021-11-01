@@ -1,0 +1,145 @@
+1) Конфигурация Git
+
+Уровни конфигураций:
+
+--system
+--global ищет в --global потом в --system
+--local (default) сначала ищет config local потом -global
+
+git config user.name 'Oleg'
+
+git config --global -e  - открыть редактирование файла конфигураций
+
+.gitattributes - конфиг файл для работы с атрибутами в проекте.
+
+.gitignore - конфиг файл, в котором шаблоны директориев на которые git не образает внимание.
+
+git check-ignore -v srcipts/for/one - проверяет среди всех шаблонов .gitignore проходит
+такой путь или нет.
+
+2) Основы Git 
+
+git add . - внести все изменения
+git status - посмотреть статус изменений
+git commit -m 'коммит меседж' - коммит
+git show - посмотреть детали коммита
+
+комит без add
+
+gitcommit -am 'Some commit' - не трогает новые файлы
+alias.commitall '!git add .; git commit' создание алиаса
+
+git rm <paths> - удаление файла
+git rm -r src - удаление директории src
+git mv index.html hello.html - переименование файла index.html -> hello.html
+
+3) Ветки
+
+git branch feature - создание новой ветки
+git checkout feature - переходим на ветку
+
+git branch -v - вывести состояние веток и последний коммит.
+
+git checkout --force master - незакомиченные изменения будут утеряны
+git stash - можно временно сохранить изменения перед тем как идти на другую ветку
+git stash pop - вытащить эти изменения
+
+git branch -f master коммитхэш/ветка - для того, чтобы ветка мастер 
+перешла на старый коммит.
+
+git branch -d fix - удаление ветки
+git branch -D fix
+
+git reflog master - логи ветки master
+git reflog --date=iso
+
+git gc - удалит недостяжимые коммиты
+
+4) Теги Git
+
+git tag v1.0.0 1943 - тег просто метка, он никуда не перемещается и указывает на один коммит.
+git show --quiet v1.0.0
+
+git tag - список тегов
+git tag --contains 1943 - посмотреть список тегов, которые содержат коммит 1943
+
+чтобы удалить Теги пишем
+
+git tag -d название тегов - удаление тегов
+
+git describe - найти ближайший тег
+
+5) Reset в Git
+
+git reset идентификатор коммита или '@~2'(на два коммита назад) - откатить на коммит
+--hard
+git reset --hard cvDqw1
+git reset --hard ORIG_HEAD - вернуть всё как было, если нас не устроил ресет.
+git reset --hard HEAD
+--soft
+git reset --soft cvDqw1
+git commit --amend - правка последнего коммита. Откат ветки назад и создание нового коммита с
+этими изменениями.
+--mixed
+git reset @~ - mixed - ресет по умолчанию.
+--keep
+git reset --keep - при жёстком reset, все незакоммиченные изменения удаляются, а keep старается
+их сохранить. Reset --keep - это тот же жёсткий reset, но с сохранением незакоммиченных изменений.
+--merge
+git reset --merge - отмена неудачного конфликтного слияния.
+
+6) Очистка проекта от изменений
+
+git clean -dxf - удаление всех неотслеживаемых файлов и директорий.
+
+7) Git просмотр
+
+git diff master feature - сравнение коммитов.
+git diff master...feature - если мы хотим узнать, что изменилось в feature 
+
+8) Git слияние
+
+git merge master - слияние ветки с master
+git merge --abort
+для отката слияния: 
+git reset --hard @~ - если допустим хотим отменить merge и вернуться на предыдущий коммит.
+
+Merge Strategy:
+* recursive
+* octopus
+* ours 
+* resolve
+* subtree
+
+9) Копирование коммитов.
+
+git cherry-pick commit - копирование коммитов, делает с помощью cherry-pick
+git cherry-pick --abort - отменит черипик и вернёт коммиты.
+git cherry-pick --quit - прекращаем выполнение черипик.
+
+
+10) Перемещение коммитов.
+
+git rebase master - перемещение нашей ветки в мастер.
+git rebase --abort
+git rebase --quit
+
+другой вариант записи:
+git rebase --onto master feature - говорим, что мы хотим перебазировать ветку на мастер и ука-
+зываем с какого момента.
+
+11) Обратные коммиты.
+
+git revert - делает коммит с противоположенными изменениями, для отмены коммита.
+
+
+
+
+
+
+
+
+
+
+
+
