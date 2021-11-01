@@ -49,3 +49,20 @@ function runWhileLoopForNSeconds(sec) {
 // The runWhileLoopForNSeconds() function does exactly what its name says. It constantly checks if the number of seconds passed by the argument has passed since it was called. The main thing to remember is that the while loop is a blocking expression, which means that it is executed on the call stack and does not use browser APIs. So it blocks all subsequent expressions until it is executed.
 // In the code above, even though setTimeout has a 0-second delay and the while loop runs for 3 seconds, exec() will get stuck in the message queue. The while loop will run in the call stack (which has one thread) until 3 seconds have passed. Only when the call stack is empty will exec() be placed on the stack and executed.
 // Thus, the delay argument in setTimeout() does not guarantee that execution will start after the specified delay has finished. It is the minimum delay time.
+
+setTimeout(() => console.log(1), 5000)
+
+Promise.resolve(console.log(2)) // sync task
+  .then(() => console.log(20))
+
+setTimeout(() => console.log(3), 0)
+
+Promise.resolve()
+  .then(() => console.log(4))
+  .then(console.log(5)) // sync task
+
+
+Promise.reject(10)
+  .then(() => {},(n) => console.log(n))
+  
+console.log(6) // sync

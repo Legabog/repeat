@@ -1,7 +1,7 @@
 // ** Scopes in JavaScript **
-// There are global, local/functional/block, nested scopes in JavaScript.
+// There are global/ window, local/functional/block, nested scopes in JavaScript.
 
-// * Global
+// * Global/ window
 // An example: 
 let a = "global"
 // * Local/functional/block

@@ -6,6 +6,10 @@
 // We have a feature to overwrite or add some custom methods
 // __proto__ ES6
 // Object.getPrototypeOf() ES5
+// all objects have a property __proto__
+// only functions(exept arrow function) and classes have a property prototype. 
+
+// __proto__ refers on class(function constructor)  Number().__proto__ === Number.prototype
 
 // * Chaning structure
 // An example

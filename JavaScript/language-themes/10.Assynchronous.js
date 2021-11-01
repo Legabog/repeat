@@ -41,7 +41,7 @@ function fn() {
 }
 // * Promises
 // promises have 3 states:
-// 1. pedning - start state of promise, not resolved and not rejected
+// 1. pending - start state of promise, not resolved and not rejected
 // 2. fulfilled - success finished operation
 // 3. rejected - fail finished operation
 

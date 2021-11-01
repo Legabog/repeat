@@ -1,0 +1,133 @@
+1. What is React? What are the advantages?
+answer: React is a UI library. The main feature of this technology are component way of building application, VirtualDOM and JSX. 
+2. What is JSX? 
+answer: JSX - JavaScript and XML. It is combination of HTML syntax and JavaScript. It is syntax sugar. Under the hood it is React.createElement construction with (type of element | props | children).
+3. What is Fragment? React.Fragment is a way of wrapping some elements together, without creating div block. It is realy helpfull way of wrapping a few element, if we don't need to have div block with some styles.
+<React.Fragment></React.Fragment> || short way <></>
+4. Types of components(uncontrollable and controllable). Nowdays we have class and function components.
+
+Uncontrollable components are similar with HTML-forms. They remember what have you typed. After you can get it value by using ref.
+
+class UncontrollableForm {
+  handleClick() {
+    const name = this.name.value
+  }
+
+  render() {
+    return  (
+      <div>
+        <input type="text" ref={input => this._name = input}/>
+        <button onClick={this.handleClick}>Click</button>
+      </div>
+    )
+  }
+}
+
+Controllable components get own value like a prop, and callback for changing this prop.
+
+class ControllableForm {
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+    };
+  }
+
+  handleNameChange = (event) => {
+    this.setState({ name: event.target.value });
+  };
+
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          value={this.state.name}
+          onChange={this.handleNameChange}
+        />
+      </div>
+    );
+  }
+}
+
+Components become controllable, when you use their value and change it.
+5. Ways of update components. 
+Class Components: this.setState(), this.forceUpdate()
+setState -> changing component's state.
+forceUpdate -> calls component's method render(), which skips shouldComponentUpdate().
+Functional Components useState, useReducer
+useState -> [value, setValue] -> with setValue we can change component's state, then will be rerender.
+useReducer -> [state, dispatch] -> with dispatch we can change component's state and trigger rerender.
+6. SetState is a mechanism of class components wich let us to change state value.
+this.setState({value: 10})
+7. VirtualDOM is a main feature of React. Manipulations with DOM tree are so expensive. Thats why React invented killer feature VirtualDOM, which makes DOM operations cheaper.
+8. It is based on a mechanism that keeps track of changes to the state and displays the updated state on the screen. In fact, we know this process as reconciliation. 
+Файбер ноды, это мутабельные ноды, которые получаются в результате рендера. Они не создаются заного. Они содержат состояние компонентов и DOM. 
+
+export const FunctionComponent = 0;
+export const ClassComponent = 1;
+export const IndeterminateComponent = 2; // Before we know whether it is function or class
+export const HostRoot = 3; // Root of a host tree. Could be nested inside another node.
+export const HostPortal = 4; // A subtree. Could be an entry point to a different renderer.
+export const HostComponent = 5;
+export const HostText = 6;
+export const Fragment = 7;
+export const Mode = 8;
+export const ContextConsumer = 9;
+export const ContextProvider = 10;
+export const ForwardRef = 11;
+export const Profiler = 12;
+export const SuspenseComponent = 13;
+export const MemoComponent = 14;
+export const SimpleMemoComponent = 15;
+export const LazyComponent = 16;
+
+Можно думать о fiber ноде как о структуре данных, которая представляет собой некоторую работу, или, другими словами, единицу работы. Архитектура fiber также обеспечивает удобный способ отслеживания, планирования, приостановки и прерывания работы. React выполняет работу в два основных этапа: render и commit.
+
+Если это первый рендер, React создает новую fiber ноду для каждого элемента, возвращаемого из рендер метода. В следующих обновлениях fiber ноды для существующих элементов React используются повторно и обновляются. Результатом фазы является дерево fiber нод, отмеченных побочными эффектами. Эффекты описывают работу, которая должна быть выполнена в следующей commit фазе. 
+
+9-10.
+  mount
+  methods: 
+  constructor(props)
+  getDerivedStateFromProps(props, state)
+  render()
+  componentDidMount()
+  -----
+  update
+  methods:
+  getDerivedStateFromProps(props, state)
+  shouldComponentUpdate(nextProps, nextState)
+  render()
+  getSnapshotBeforeUpdate(prevProps, prevState)
+  componentDidUpdate(prevProps, prevState, snapshot)
+  -----
+  unmount
+  methods:
+  componentWillUnmount()
+  -----
+  errorhandling
+  methods:
+  getDerivedStateFromError(error)
+  componentDidCatch(error, info)
+
+[UNSAFE_]componentWillMount (устарел)
+[UNSAFE_]componentWillReceiveProps (устарел)
+[UNSAFE_]componentWillUpdate (устарел)  
+
+11. useState - hook for component's state initialization. With destructuring we need to initialize variable and setter for this variable. const [value, setValue] = useState(initialState)
+12. useRef - hook for creating a reference-object, which we could use with some elements. Ref will be the same object after rerender. const newRef = useRef(initialValue)
+newRef.current.focus()
+13. useContext - hook for using values, which was created by using React.const someContext = createContext(Context)
+if we want to get it, we need to use 
+<Context.Provider value={someContext}>
+  <ParentComponent />
+</Context.Provider>
+
+function ParentComponent() {
+  here we can use hook useContext, to get Context value
+  or in inside components
+  const myContext = useContext(Context)  
+}
+
+14. Mutations, subscribtions, timers, logs and other side effects we can't do it inside main body of functional component. It will lead to mistakes in user interface. useEffect(callback, [dependencies]). Default is after each render will start effects. But we can start it only with dependesies changing. Often effects create resources, which we need to delete. If we need it, we can use return function inside useEffect's callback. 
